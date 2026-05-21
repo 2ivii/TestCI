@@ -1,0 +1,33 @@
+name: Test Harness CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm run test:coverage
+      - name: 커버리지 게이트 체크
+        run: |
+          COVERAGE=$(npx jest --coverage --coverageReporters=json-summary 2>/dev/null && node -e "
+            const report = require('./coverage/coverage-summary.json');
+            const total = report.total;
+            const avg = (total.lines.pct + total.branches.pct + total.functions.pct + total.statements.pct) / 4;
+            console.log(Math.round(avg * 100) / 100);
+          ")
+          echo "📊 평균 커버리지: ${COVERAGE}%"
+          if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+            echo "❌ 커버리지 ${COVERAGE}%로 80% 미달 — 머지 차단"
+            exit 1
+          else
+            echo "✅ 커버리지 ${COVERAGE}%로 80% 이상 — 통과"
+          fi

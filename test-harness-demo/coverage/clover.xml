@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1779339989863" clover="3.2.0">
+  <project timestamp="1779339989863" name="All files">
+    <metrics statements="43" coveredstatements="43" conditionals="30" coveredconditionals="30" methods="6" coveredmethods="6" elements="79" coveredelements="79" complexity="0" loc="43" ncloc="43" packages="2" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="38" coveredstatements="38" conditionals="26" coveredconditionals="26" methods="4" coveredmethods="4"/>
+      <file name="discount.js" path="/Users/yunjeongmin/Desktop/항공대/4-1/캡디/TestCI/test-harness-demo/src/discount.js">
+        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="11" count="19" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="16" type="stmt"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+      </file>
+      <file name="order.js" path="/Users/yunjeongmin/Desktop/항공대/4-1/캡디/TestCI/test-harness-demo/src/order.js">
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="15" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+      <file name="payment.js" path="/Users/yunjeongmin/Desktop/항공대/4-1/캡디/TestCI/test-harness-demo/src/payment.js">
+        <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.fixtures">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="orderFixtures.js" path="/Users/yunjeongmin/Desktop/항공대/4-1/캡디/TestCI/test-harness-demo/tests/fixtures/orderFixtures.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="2" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
